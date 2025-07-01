@@ -1,0 +1,63 @@
+:root {
+  --font-family-primary: "Trebuchet MS", sans-serif;
+  --font-family-secondary: "Arial", sans-serif;
+  --font-family-tertiary: "Times New Roman", serif;
+  --font-family-hand: "Edu SA Hand", cursive;
+  --font-family-birthstone: "Birthstone", cursive;
+  --font-family-quicksand: "Quicksand", sans-serif;
+  --family-primary: serif;
+
+  --font-xs: 12px;
+  --font-sm: 16px;
+  --font-md: 20px;
+  --font-standard: 24px;
+  --font-lg: 30px;
+  --font-xl: 40px;
+  --font-1xl: 50px;
+  --font-2xl: 60px;
+
+  --heading: 34px;
+  --description: 16px;
+
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 600;
+  --font-bold: 700;
+
+  --color-primary: #007bff;
+  --color-primary-hover: #1e90ff;
+  --color-primary-light: rgb(209, 229, 249);
+  --color-secondary: #444;
+  --color-success: #28A745;
+  --color-danger: #DB4444;
+  --color-warning: #FFC107;
+  --color-info: #17A2B8;
+  --color-light: #F8F9FA;
+  --color-dark: #343A40;
+
+  --success-dark: green;
+  --success: #28a745;
+  --success-light: #50C878;
+  --success-bg: #F5F5F5;
+  --color-green: #00FF66;
+  --bg-color: #E2DEC8;
+  --bg-container: #EFEBD2;
+
+  --secondary: #6c757d;
+  --tertiary: #f8f9fa;
+  --quaternary: #343a40;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --info: #17a2b8;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --white: #fff;
+  --white-bg: #FFFFFF;
+  --black: #000;
+  --gray: #6c757d;
+  --gray-light: #f4f4f4;
+  --text-color: #FAFAFA;
+
+  --radius: 12px;
+  --rounded: 100px;
+}
