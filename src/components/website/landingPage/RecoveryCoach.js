@@ -16,7 +16,7 @@ function RecoveryCoach() {
     return (
         <Box
             sx={{
-                minHeight: { xs: 'auto', md: '50vh' },
+                minHeight: { xs: 'auto', md: '50vh', lg:"40vh" },
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
@@ -24,7 +24,7 @@ function RecoveryCoach() {
                 px: 2,
                 textAlign: 'center',
                 gap: 4,
-                py:2
+                py:1
             }}
         >
             {/* Title with underline */}

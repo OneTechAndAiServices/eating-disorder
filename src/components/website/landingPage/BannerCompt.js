@@ -14,16 +14,54 @@ function BannerCompt() {
   }, []);
 
   return (
-    <Box sx={{ bgcolor: 'var(--bg-color)',  minHeight: { xs: "auto", md: "50vh" }, width: "100%", pt: { xs: 4, md: 0 } }} >
+    <Box
+      sx={{
+        bgcolor: 'var(--bg-color)',
+        minHeight: { xs: "auto", md: "50vh" },
+        width: "100%",
+        pt: { xs: 4, md: 0 },
+        position: "relative",
+        overflow: "hidden",
+      }} >
 
       <Grid
         container
-        spacing={ 4}
+        spacing={4}
         alignItems="stretch"
         justifyContent="space-between"
       >
         {/* Left Text */}
         <Grid size={{ xs: 12, md: 7 }} sx={{ display: 'flex', alignItems: 'center' }}>
+          {/* Top Left Ellipse 1 */}
+          <Box
+            component="img"
+            src="/images/ellipse1.png"
+            alt="Ellipse 1"
+            sx={{
+              position: 'absolute',
+              top: '-37px',
+              left: '-20px',
+              width: { xs: '100px', sm: '130px', md: '250px' },
+              zIndex: 0,
+              border:"4px soild red"
+            }}
+          />
+
+          {/* Top Left Ellipse 2 (on top of ellipse1) */}
+          <Box
+            component="img"
+            src="/images/ellipse2.png"
+            alt="Ellipse 2"
+            sx={{
+              position: 'absolute',
+              top: '0px',
+              left: '20px',
+              width: { xs: '150px', sm: '100px', md: '250px',lg:"300px" },
+              zIndex: 0,
+              opacity:"60%"
+
+            }}
+          />
           <Box mx={{ xs: 3, md: 6 }} mt={{ xs: 4, md: 10 }}  >
             <Box sx={{ position: 'relative', display: 'inline-block' }}>
               <Typography
@@ -59,7 +97,7 @@ function BannerCompt() {
                       width: { xs: '115%', sm: '110%', md: '100%' }, // adjust width as needed
                       zIndex: 0,
                       pointerEvents: 'none',
-                      objectFit:"contain"
+                      objectFit: "contain"
                     }}
                   />
 
@@ -105,7 +143,7 @@ function BannerCompt() {
                 p: "5px 28px 5px 28px",
                 mb: { xs: 4, md: 0 }
               }}
-                data-aos="fade-down"
+              data-aos="fade-down"
             >
               Get Started
             </Button>
@@ -113,7 +151,7 @@ function BannerCompt() {
         </Grid>
 
         {/* Right Image */}
-        <Grid size={{ xs: 12, md: 5 }} sx={{ display: 'flex', alignItems: 'center', textAlign:"center" }} data-aos="fade-left" >
+        <Grid size={{ xs: 12, md: 5 }} sx={{ display: 'flex', alignItems: 'center', textAlign: "center" }} data-aos="fade-left" >
           <Box
             sx={{
               position: 'relative',
@@ -125,7 +163,7 @@ function BannerCompt() {
               //   lg: '600px'    // for large screens
               // },
               // height: { xs: 'auto', md: 'auto' },
-              height:"100%"
+              height: "100%"
             }}
           >
             <Box
@@ -144,7 +182,7 @@ function BannerCompt() {
               sx={{
                 position: 'absolute',
                 top: { xs: '50%', md: '60%' },
-                left: { xs: '18%',sm:"16%", md: '16%',  },
+                left: { xs: '18%', sm: "16%", md: '18%', lg: "14%" },
                 transform: { xs: 'translate(-50%, -50%)', md: 'translate(-50%, -50%)' },
                 textAlign: { xs: 'center', md: 'start' },
                 width: { xs: '100%', md: 'auto' },
@@ -153,7 +191,7 @@ function BannerCompt() {
               <Typography
                 sx={{
                   fontFamily: 'var(--font-family-birthstone)',
-                  fontSize: { xs: '50px', sm: '60px', md: '80px' },
+                  fontSize: { xs: '50px', sm: '60px', md: '80px', lg: "90px" },
                   fontWeight: 600,
                 }}
                 data-aos="fade-up-right"
@@ -163,9 +201,9 @@ function BannerCompt() {
               <Typography
                 sx={{
                   fontFamily: 'var(--font-family-quicksand)',
-                  fontSize: { xs: '12px', sm: '14px', md: '12px' },
+                  fontSize: { xs: '12px', sm: '14px', md: '12px', lg: "14px" },
                   fontWeight: 500,
-                  letterSpacing: "2px"
+                  letterSpacing: "2px",
                 }}
                 data-aos="fade-up-right"
               >

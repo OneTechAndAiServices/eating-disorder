@@ -88,10 +88,11 @@ function VirtualEating() {
                     </Grid>
                     {/* Right Image */}
                     <Grid
-                        item
-                        xs={12}
-                        sm={10}
-                        md={6}
+                        size={{
+                        xs:12,
+                        sm:10,
+                        md:6
+                        }}
                         display="flex"
                         justifyContent="center"
                         data-aos="fade-left"
@@ -101,8 +102,8 @@ function VirtualEating() {
                             <Box
                                 sx={{
                                     position: "absolute",
-                                    top: { xs: 10, md: 15 },      // adjust offset vertically
-                                    left: { xs: 10, md: 15 },     // adjust offset horizontally
+                                    top: { xs: 10, md: 18 },      // adjust offset vertically
+                                    left: { xs: 10, md: 18 },     // adjust offset horizontally
                                     width: { xs: "260px", sm: "360px", md: "380px" },
                                     height: { xs: "280px", sm: "360px", md: "380px" },
                                     // backgroundColor: "#EFEBD2", // light beige/yellow frame color
@@ -122,8 +123,7 @@ function VirtualEating() {
                                     objectFit: "cover",
                                     position: "relative",
                                     zIndex: 1,
-                                    borderRadius: "8px",
-                                }}
+                                    }}
                             />
                         </Box>
                     </Grid>
