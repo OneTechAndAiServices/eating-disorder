@@ -22,6 +22,8 @@ function Rediscover() {
       justifyContent: 'center',
       alignItems: 'center',
       py: { xs: 4, md: 2 },
+      overflow: "hidden", 
+      position: "relative"
 
     }}>
       <Grid

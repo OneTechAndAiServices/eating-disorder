@@ -2,7 +2,7 @@ import './styles/global.css'; // your global CSS
 import { CssBaseline } from '@mui/material';
 
 export const metadata = {
-  title: "Your App Title",
+  title: "Eating Disorder",
   description: "Your app description",
 };
 

@@ -214,7 +214,7 @@ function BannerCompt() {
         </Grid>
       </Grid>
 
-      <Box sx={{ bgcolor: "black", width: "100%", height: "10px", position: 'absolute' }} />
+      <Box sx={{ bgcolor: "black", width: "100%", height: "10px" }} />
     </Box>
   );
 }

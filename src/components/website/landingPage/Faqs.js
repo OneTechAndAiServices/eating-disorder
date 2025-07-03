@@ -26,6 +26,8 @@ export default function Faqs() {
         width: '100%',
         px: { xs: 2, md: 6 },
         py: { xs: 6, md: 10 },
+        overflow:"hidden",
+        position:"relative",
       }}
     >
       <Grid container spacing={2} alignItems="flex-start">

@@ -25,7 +25,7 @@ function Conatiner() {
                             gap: { xs: 4, md: 0 },
 
                         }}
-                        data-aos="fade-up-right"
+                        // data-aos="fade-up-right"
                     >
                         <Box display={"flex"} flexDirection={"column"}  >
                             <Typography sx={{ fontFamily: "var(--font-family-hand)", fontWeight: 400, fontSize: { xs: "25px", md: "30px" } }}>
@@ -70,7 +70,9 @@ function Conatiner() {
                         </Box>
                     </Grid>
                     {/* Left Image */}
-                    <Grid size={{ xs: 12, md: 6 }} display={"flex"} justifyContent={"center"} data-aos="fade-left">
+                    <Grid size={{ xs: 12, md: 6 }} display={"flex"} justifyContent={"center"} 
+                    // data-aos="fade-left"
+                    >
                         <Box
                             component="img"
                             src="/images/container.jpg"
