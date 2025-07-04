@@ -24,7 +24,8 @@ function RecoveryCoach() {
                 px: 2,
                 textAlign: 'center',
                 gap: 4,
-                py:1
+      py: { xs: 4, md: 8 },
+                
             }}
         >
             {/* Title with underline */}

@@ -4,17 +4,17 @@ import React, { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function Banner() {
-       useEffect(() => {
-        AOS.init({
-          duration: 500,
-          once: true,
-        });
-      }, []);
+function Container() {
+
+        useEffect(() => {
+            AOS.init({
+              duration: 500,
+              once: true,
+            });
+          }, []);
 
   return (
-    <>
-      <Box>
+    <Box>
         <Grid container display={"flex"} flexDirection={"row"} spacing={{ xs:6, sm:0}}
           sx={{
             py: { xs: 4, md: 8 },
@@ -133,8 +133,7 @@ function Banner() {
           </Grid>
         </Grid>
       </Box>
-    </>
   )
 }
 
-export default Banner
+export default Container

@@ -21,7 +21,7 @@ function Rediscover() {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      py: { xs: 4, md: 2 },
+      py: { xs: 4, md: 8 },
       overflow: "hidden", 
       position: "relative"
 
@@ -34,7 +34,8 @@ function Rediscover() {
         sx={{
           maxWidth: '1200px',
           px: { xs: 2, sm: 2 },
-          pt: 12
+          // pt: 12
+  
         }}
         data-aos="fade-right"
       >
@@ -45,7 +46,8 @@ function Rediscover() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            mb: { xs: 4, md: 0 }
+            // mb: { xs: 4, md: 0 }
+            
           }}
         >
           <Box
@@ -54,8 +56,10 @@ function Rediscover() {
               width: '100%',
               maxWidth: { xs: 280, sm: 320, md: 380 },
               height: { xs: 360, sm: 400, md: 450 },
-              display: 'flex',
-              justifyContent: 'center',
+              py:3
+
+              // display: 'flex',
+              // justifyContent: 'center',
             }}
           >
             {/* Base Image */}
@@ -71,14 +75,14 @@ function Rediscover() {
             />
 
             {/* Overlay Image */}
-            <Box
+            <Box  
               component="img"
               src="/images/closeupdesert.jpg"
               alt="Overlay"
               sx={{
                 position: 'absolute',
-                top: { xs: '14%', sm: '16%', md: '13%' },
-                left: { xs: "90%", sm: "95%", md: "90%" },
+                top: { xs: '22%', sm: '20%', md: '17%' },
+                left: { xs: "100%", sm: "85%", md: "85%" },
                 transform: 'translateX(-50%)',
                 width: { xs: "135px", sm: "180px", md: "220px" },
                 height: "auto",

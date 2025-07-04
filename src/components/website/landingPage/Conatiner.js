@@ -13,7 +13,7 @@ function Conatiner() {
 
     return (
         <>
-            <Box sx={{ backgroundColor: "var(--bg-container)", width: "100%", height: { xs: "auto", md: "80vh", lg: "auto" }, pb: { xs: 2, md: 0, lg:10 }, pt:{ xs:0, lg:10 } , display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <Box sx={{ backgroundColor: "var(--bg-container)", width: "100%", height: { xs: "auto", md: "80vh", lg: "auto" }, py: { xs: 4, md: 0, lg:10 }, pt:{ xs:0, lg:10 } , display: "flex", justifyContent: "center", alignItems: "center" }}>
                 <Grid container justifyContent={"center"} alignItems={"center"} maxWidth={"900px"} spacing={{ xs: 2, md: 0 }} >
                     {/* Right Text */}
                     <Grid size={{ xs: 12, md: 6 }} display={"flex"} flexDirection={"column"} justifyContent={"center"}

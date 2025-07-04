@@ -1,20 +1,10 @@
 "use client";
 import { Box, Typography } from '@mui/material'
 import React, { useEffect } from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
-function CoachingBanner() {
-
-       useEffect(() => {
-      AOS.init({
-        duration: 500,
-        once: true,
-      });
-    }, []);
-
+function ConsultingBanner() {
   return (
-   <>
+    <>
      <Box
       sx={{
         backgroundColor: "#E2DEC8",
@@ -35,11 +25,11 @@ function CoachingBanner() {
           top: { xs: '70px', sm: '80px', md: '90px' }, 
         }}
       >
-        Coaching
+        Consulting
       </Typography>
     </Box>
-   </>
+    </>
   )
 }
 
-export default CoachingBanner
+export default ConsultingBanner

@@ -26,8 +26,8 @@ function AboutContact() {
         gap: 2,
         px:{xs:2, sm:10, md:22 } , 
         textAlign: "center",
-        pt:6,
-        pb:6,
+                           py: { xs: 4, md: 8 },
+
         overflow:"hidden",
         position:"relative"
       }}

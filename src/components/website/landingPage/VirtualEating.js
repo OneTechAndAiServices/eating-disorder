@@ -14,8 +14,13 @@ function VirtualEating() {
 
     return (
         <>
-            <Box height={{ xs: "auto", md: "80vh" }} width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
-                <Grid container sx={{ height: "100%" }} justifyContent={"center"} alignItems={"center"} spacing={4} py={{ xs: 4, md: 0 }} >
+            <Box  sx={{ 
+                    py: { xs: 4, md: 8 },
+                    // Remove fixed height and let content determine height
+                    maxHeight: { xs:"auto" , md: "100vh" }
+                }}  width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"center"}
+               >
+                <Grid container sx={{ height: "auto" , px:2 }} justifyContent={"center"} alignItems={"center"} spacing={4}   >
                     {/* Left Text */}
                     <Grid size={{ xs: 12, sm: 10, md: 6 }} display={"flex"} flexDirection={"column"} alignItems={{ xs: "center", md: "flex-start" }} gap={4}   >
                         <Box
