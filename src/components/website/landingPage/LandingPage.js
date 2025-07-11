@@ -8,6 +8,7 @@ import Recovery from './Recovery'
 import VirtualEating from './VirtualEating'
 import Contact from './Contact'
 import Faqs from './Faqs'
+import Footer from '../footer/Footer'
 
 
 function LandingPage() {
@@ -22,6 +23,7 @@ function LandingPage() {
      <VirtualEating/>
      <Contact/>
      <Faqs/>
+     <Footer/>
     </>
   )
 }

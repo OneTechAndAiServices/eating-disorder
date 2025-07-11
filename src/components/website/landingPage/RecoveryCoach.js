@@ -77,11 +77,11 @@ function RecoveryCoach() {
                 }}
                 data-aos="fade-down"
             >
-                Hi, I’m <span style={{ fontWeight: 700 }}>Safia</span>, your dedicated symbol for eating disorder recovery coach. With a background in psychology, nutrition
+                Hi, I’m <span style={{ fontWeight: 700 }}>Safia</span>, I’m a certified Carolyn Costin Institute (CCI) Eating Disorder Recovery Coach, a former  social worker and 
                 <Box component="span" sx={{ display: { xs: 'none', md: 'inline' } }}><br /></Box>
-                counseling, and behavioral therapy, I combine science-backed strategies with personalized care to help you heal—mind, body,
+                teacher, and someone who has walked the recovery path myself. My own  journey began when I developed anorexia and 
                 <Box component="span" sx={{ display: { xs: 'none', md: 'inline' } }}><br /></Box>
-                and soul. Based in UAE, I work with clients globally through virtual sessions, offering flexible, judgment-free support.
+                became obsessed with exercise — later  shifting into orthorexia.
             </Typography>
 
             {/* Button */}
@@ -90,12 +90,13 @@ function RecoveryCoach() {
                 sx={{
                     bgcolor: 'black',
                     borderRadius: '60px',
-                    px: 4,
+                    px: 6,
                     py: 1.5,
                     fontFamily: 'var(--font-family-hand)',
                     fontSize: '15px',
                     color: 'var(--white-bg)',
                     textTransform: 'capitalize',
+                    fontWeight:400
                 }}
                 data-aos="fade-up"
             >

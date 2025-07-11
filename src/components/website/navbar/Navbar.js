@@ -13,6 +13,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from 'next/link';
+
 import { useTheme } from '@mui/material/styles';
 
 function Navbar() {
@@ -57,7 +58,7 @@ function Navbar() {
       >
         <Grid container alignItems="center" justifyContent="space-between">
           {/* Logo */}
-          <Grid size={{ xs:6 , sm:3 }}>
+          <Grid size={{ xs: 6, sm: 3 }}>
             <Typography
               sx={{
                 fontFamily: 'var(--font-family-birthstone)',
@@ -72,9 +73,9 @@ function Navbar() {
 
           {/* Desktop Links */}
           <Grid
-            size={{ sm:6 }}
-            sx={{ 
-              display: { xs: 'none', sm: 'flex' }, 
+            size={{ sm: 6 }}
+            sx={{
+              display: { xs: 'none', sm: 'flex' },
               justifyContent: 'center',
               gap: 4
             }}
@@ -90,26 +91,35 @@ function Navbar() {
                   color: 'black',
                   textDecoration: 'none',
                   cursor: 'pointer',
-                  transition: 'color 0.2s ease',
+                  padding: '4px 8px',
+                  borderRadius: '4px',
+                  transition: 'all 0.4s',
                 }}
-                onMouseOver={(e) => (e.target.style.color = '#6d28d9')}
-                onMouseOut={(e) => (e.target.style.color = 'black')}
+                onMouseOver={(e) => {
+                  e.target.style.color = 'var(--white-bg)';
+                  e.target.style.backgroundColor = 'black';
+                }}
+                onMouseOut={(e) => {
+                  e.target.style.color = 'black';
+                  e.target.style.backgroundColor = 'transparent';
+                }}
               >
                 {link.name}
               </Link>
+
             ))}
           </Grid>
 
           {/* Mobile Menu Icon */}
-          <Grid size={{ xs:6 , sm:3 }} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <Grid size={{ xs: 6, sm: 3 }} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
             {isMobile && (
-              <IconButton 
+              <IconButton
                 onClick={() => setDrawerOpen(true)}
-                sx={{ 
+                sx={{
                   color: 'black',
                   '&:hover': {
                     backgroundColor: 'rgba(109, 40, 217, 0.1)',
-                    
+
                   }
                 }}
               >
@@ -126,7 +136,7 @@ function Navbar() {
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
         ModalProps={{
-          keepMounted: true, 
+          keepMounted: true,
         }}
         PaperProps={{
           sx: {
@@ -139,11 +149,11 @@ function Navbar() {
           '& .MuiBackdrop-root': {
             backgroundColor: 'rgba(0,0,0,0.3)',
           },
-          zIndex: 1400, 
+          zIndex: 1400,
         }}
       >
-        <Box 
-          sx={{ 
+        <Box
+          sx={{
             width: '100%',
             height: '100%',
             display: 'flex',

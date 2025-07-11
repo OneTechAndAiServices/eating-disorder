@@ -1,8 +1,9 @@
 "use client";
-import { Box, Grid, Typography } from '@mui/material'
+import { Box, Grid, IconButton, Typography } from '@mui/material'
 import React, { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import CallIcon from '@mui/icons-material/Call';
 
 function VirtualEating() {
     useEffect(() => {
@@ -18,9 +19,9 @@ function VirtualEating() {
                     py: { xs: 4, md: 8 },
                     // Remove fixed height and let content determine height
                     maxHeight: { xs:"auto" , md: "100vh" }
-                }}  width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"center"}
+                }}  width={"100%"}  display={"flex"} alignItems={"center"} justifyContent={"center"}
                >
-                <Grid container sx={{ height: "auto" , px:2 }} justifyContent={"center"} alignItems={"center"} spacing={4}   >
+                <Grid container sx={{ height: "auto" , px:2 }} justifyContent={"center"} alignItems={"center"} spacing={4} maxWidth={"1000px"}  >
                     {/* Left Text */}
                     <Grid size={{ xs: 12, sm: 10, md: 6 }} display={"flex"} flexDirection={"column"} alignItems={{ xs: "center", md: "flex-start" }} gap={4}   >
                         <Box
@@ -66,30 +67,47 @@ function VirtualEating() {
                         </Box>
                         {/* List of Features */}
                         <Box display="flex" flexDirection="column" gap={2} alignItems={{ xs: "center", md: "flex-start" }}>
-                            {[
-                                {
-                                    title: "Flexible & Accessible",
-                                    desc: "Get support from anywhere in the world."
-                                },
-                                {
-                                    title: "Personalized Strategies",
-                                    desc: "Tailored plans for your unique recovery needs."
-                                },
-                                {
-                                    title: "Science-Backed Methods",
-                                    desc: "Combining neuroscience, CBT, and mindfulness for lasting change."
-                                }
-                            ].map((item, i) => (
-                                <Box key={i} textAlign={{ xs: "center", md: "left" }}>
-                                    <Typography sx={{ fontSize: "18px", fontWeight: 600, fontFamily: "var(--font-family-hand)" }}>
-                                        {item.title}
-                                    </Typography>
-                                    <Typography sx={{ fontSize: "15px", fontWeight: 400, fontFamily: "var(--font-family-hand)" }}>
-                                        {item.desc}
+                          
+                                <Box >
+                                   
+                                    <Typography sx={{ fontSize: "25px", fontWeight: 400, fontFamily: "var(--font-family-hand)" , textAlign:{ xs:"center", md:"left"}}}>
+                                       If you're ready to explore how coaching can support your recovery, get in touch to book a  free discovery call.
                                     </Typography>
                                 </Box>
-                            ))}
+                          
                         </Box>
+                         <Box
+                                sx={{
+                                  display: "flex",
+                                  flexDirection: "row",
+                                  alignItems: "center",
+                                  justifyContent: "center",
+                                  backgroundColor: "black",
+                                  width: { xs:"150px", md: "200px" },
+                                  height: { xs:"40px", md: "50px" },
+                                  gap: 1,
+                                  cursor: "pointer",
+                                  borderRadius: "60px",
+                                  p: "10px 12px 10px 12px",
+                                  mt: 2,
+                                }}
+                                data-aos="fade-up"
+                                 suppressHydrationWarning
+                              >
+                                <Typography
+                                  sx={{
+                                    color:"var(--white-bg)",
+                                    fontWeight: 400,
+                                    fontSize:{xs:"10px", md: "15px" },
+                                    fontFamily: "var(--font-family-hand)",
+                                  }}
+                                >
+                                  Contact Me Today
+                                </Typography>
+                                <IconButton sx={{ backgroundColor:"var(--white-bg)"}}>
+                                    <CallIcon  sx={{ color:"black", fontSize:{xs:"10px", md:"15px"}}} />
+                                </IconButton>
+                              </Box>
                     </Grid>
                     {/* Right Image */}
                     <Grid
@@ -106,10 +124,10 @@ function VirtualEating() {
                             <Box
                                 sx={{
                                     position: "absolute",
-                                    top: { xs: 10, md: 18 },      // adjust offset vertically
-                                    left: { xs: 10, md: 18 },     // adjust offset horizontally
+                                    top: { xs: 12, md: 18 },      // adjust offset vertically
+                                    left: { xs: 12, md: 18 },     // adjust offset horizontally
                                     width: { xs: "260px", sm: "360px", md: "380px" },
-                                    height: { xs: "280px", sm: "360px", md: "380px" },
+                                    height: { xs: "300px", sm: "380px", md: "420px" },
                                     // backgroundColor: "#EFEBD2", // light beige/yellow frame color
                                     border:"6px solid #EFEBD2",
                                     zIndex: 0,
@@ -123,7 +141,7 @@ function VirtualEating() {
                                 alt="Virtual Eating"
                                 sx={{
                                     width: { xs: "260px", sm: "360px", md: "380px" },
-                                    height: { xs: "280px", sm: "360px", md: "380px" },
+                                    height: { xs: "300px", sm: "380px", md: "420px" },
                                     objectFit: "cover",
                                     position: "relative",
                                     zIndex: 1,

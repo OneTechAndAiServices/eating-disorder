@@ -32,7 +32,7 @@ export default function Faqs() {
     >
       <Grid container spacing={2} alignItems="flex-start">
         {/* Left Column */}
-        <Grid size={{ xs:12, md:6 }} data-aos="fade-right" >
+        <Grid size={{ xs:12, md:4 }} data-aos="fade-right" >
           <Typography
             sx={{
               fontWeight: 600,
@@ -57,34 +57,39 @@ export default function Faqs() {
         </Grid>
 
         {/* Right Column - Accordion */}
-        <Grid size={{ xs:12, md:6 }} data-aos="fade-left">
+        <Grid size={{ xs:12, md:8 }} data-aos="fade-left">
           {[
             {
-              question: 'What does an eating disorder recovery coach do?',
+              question: 'What is recovery coaching, and how is it different from therapy?',
               answer:
-                'An ED recovery coach provides real-time support, accountability, and practical strategies to help you normalize eating behaviors, challenge disordered thoughts, and build a sustainable recovery lifestyle.'
+                'Recovery coaching is a collaborative partnership focused on supporting you to set and achive your personal recovery goals. Unlike therapy, which often explores past experiences and mental health diagnoses, coaching is future-focused and practical. I provide tools, accountability, and encouragement to help you bild new habits, strengthen your mindset, and live the life you want beyond your eating disorder.'
             },
             {
-              question: 'How is coaching different from therapy?',
+              question: 'How often do we meet, and what do the sessions involve?',
               answer:
-                'Coaching is future-focused and action-oriented, while therapy may deal with past trauma. Coaching supports behavior change through practical tools.'
+                'We typically meet once a week via online video calls, but the schedule can be tailored to fit your needs. Each session is personalized, focusing on your goals and challenges at that moment. We might discuss meal planning, coping strategies, mindset shifts, or anything else relevant to your recovery journey. '
             },
             {
-              question: 'Do you offer support between sessions?',
+              question: 'Can I reach out between sessions if I need extra support?',
               answer:
-                'Yes, many coaches offer text or voice support between sessions to provide guidance and accountability when needed most.'
+                'Yes! I offer ongoing support through WhatsApp seven days a week for questions, encouragement, and accountability. Whether you need a quick check-in, help managing a tough moment, or just some motivation, I’m here to support you beyond our scheduled sessions.'
             },
             {
-              question: 'Is recovery really possible?',
+              question: 'Is coaching suitable for all stages of recovery?',
               answer:
-                'Absolutely. With the right tools, mindset, and support, full recovery from eating disorders is not only possible—it’s achievable.'
+                'Absolutely. Whether you’re just beginning to consider recovery or have been working on it for some time, coaching can be adapted to meet you where you are. My approach respects your pace and readiness while helping you build skills and confidence for lasting change. '
+            },
+            {
+              question: 'How do I know if coaching is the right fit for me',
+              answer:
+              'If you want to recover and make changes, open to learning new tools, and want structured support without judgment, coaching could be a great fit. The best way to find out is to schedule a free discovery call where we can discuss your goals and see how I can best support you.'
             }
           ].map((item, index) => (
             <Accordion
               key={index}
               sx={{
                 boxShadow: 'none',
-                borderBottom: '3px solid #E0D8B0',
+                borderBottom: '3px solid #EFEBD2',
                 '&:before': { display: 'none' }
               }}
             >
